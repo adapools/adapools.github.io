@@ -31,13 +31,17 @@ footer {
 
   display: flex;
   flex-direction: row;
-  flex-wrap:nowrap;
-  justify-content:space-between;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-footer a{
-    color:white;
-    text-decoration: none;
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 .font1 {
