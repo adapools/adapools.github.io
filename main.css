@@ -44,7 +44,7 @@ footer a {
   text-decoration: none;
 }
 
-.badges {
+#badges {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -52,7 +52,7 @@ footer a {
   justify-content: space-between;
 }
 
-.badge {
+#badges .badge {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 120px;
@@ -63,8 +63,12 @@ footer a {
   border-radius: 5%;
 }
 
-.badge .illustration {
+#badges .badge .illustration {
   margin: 0.5rem;
+}
+
+#introduction {
+  padding: 3rem;
 }
 
 .font1 {
