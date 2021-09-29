@@ -24,119 +24,171 @@
   </head>
 
   <body>
-    <header style="text-align: center">
-      <img
-        src="./images/condor-emblem-hexagon-blue.svg"
-        width="128"
-        height="128"
-      />
-      <div style="white-space: nowrap; font-size: 0.8rem">
-        Pool ID: c8ee084a463b89a6e7fe9f2e35506dd98d09047ea6d29866375e363d
-      </div>
-      <div style="margin-top: 5rem"></div>
-      <h1 class="font1 color-frenchblue" style="font-size: 2.5rem; margin: 0">
-        [TSAR] The Tsar Pool
-      </h1>
-      <div class="font2" style="font-size: 1.5rem">
-        A noble and reliable stake pool
-      </div>
+    <header>
+      <section id="main-title" style="text-align: center">
+        <img
+          src="./images/condor-emblem-hexagon-blue.svg"
+          width="128"
+          height="128"
+        />
+        <div style="margin-top: 2rem"></div>
+        <h1 class="font1 color-frenchblue" style="font-size: 2.5rem; margin: 0">
+          [TSAR] The Tsar Pool
+        </h1>
+        <div class="font2" style="font-size: 1.5rem">
+          A noble and reliable stake pool
+        </div>
+      </section>
     </header>
 
     <main>
-      <section id="introduction" style="text-align: center">
-        <div>
+      <section id="parameters" style="text-align: center">
+        <h2
+          class="font1 bg-gray color-white"
+          style="margin-bottom: 0; padding-bottom: 0"
+        >
+          Parameters
+        </h2>
+        <small class="color-gray">
+          Pool ID: c8ee084a463b89a6e7fe9f2e35506dd98d09047ea6d29866375e363d
+        </small>
+        <div id="parameters-list" style="text-align: center; margin-top: 1rem">
+          <div class="parameter">
+            <span style="font-weight: bold">1.29.0</span>
+            <hr />
+            <small>version</small>
+          </div>
+          <div class="parameter">
+            <span style="font-weight: bold">1.5%</span>
+            <hr />
+            <small>margin</small>
+          </div>
+          <div class="parameter">
+            <span style="font-weight: bold">340₳</span>
+            <hr />
+            <small>fixed fees</small>
+          </div>
+          <div class="parameter">
+            <span style="font-weight: bold">2'000₳</span>
+            <hr />
+            <small>pledge (✓)</small>
+          </div>
+          <div class="parameter">
+            <span style="font-weight: bold">100%</span>
+            <hr />
+            <small>online relays (1/1)</small>
+          </div>
+          <div class="parameter">
+            <span style="font-weight: bold">294</span>
+            <hr />
+            <small>first epoch</small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main>
+      <!--  -->
+      <section id="architecture" style="text-align: center">
+        <h2 class="font1 bg-gray color-white">Architecture</h2>
+        <div class="illustration" style="margin-top: 1.5rem">
           <img src="./images/tsar.drawio.png" />
         </div>
       </section>
       <!--  -->
-      <section id="badges" class="font1 color-white">
-        <div class="badge">
-          <div class="illustration">
-            <img src="./images/circuitry.svg" width="48" height="48" />
+    </main>
+
+    <main style="margin: 3rem 0">
+      <section id="badges">
+        <div id="badges-list" class="font1 color-white">
+          <div class="badge">
+            <div class="illustration">
+              <img src="./images/circuitry.svg" width="48" height="48" />
+            </div>
+            6 vCPU Cores
           </div>
-          6 vCPU Cores
-        </div>
-        <div class="badge">
-          <div class="illustration">
-            <img
-              src="./images/ram-nobg-frenchblue.svg"
-              width="48"
-              height="48"
-            />
+          <div class="badge">
+            <div class="illustration">
+              <img
+                src="./images/ram-nobg-frenchblue.svg"
+                width="48"
+                height="48"
+              />
+            </div>
+            16 GB RAM
           </div>
-          16 GB RAM
-        </div>
-        <div class="badge">
-          <div class="illustration">
-            <img
-              src="./images/aerial-signal-nobg-white.svg"
-              width="48"
-              height="48"
-            />
+          <div class="badge">
+            <div class="illustration">
+              <img
+                src="./images/aerial-signal-nobg-white.svg"
+                width="48"
+                height="48"
+              />
+            </div>
+            32 TB Traffic
           </div>
-          32 TB Traffic
-        </div>
-        <div class="badge">
-          <div class="illustration">
-            <img
-              src="./images/fire-shield-nobg-white.svg"
-              width="48"
-              height="48"
-            />
+          <div class="badge">
+            <div class="illustration">
+              <img
+                src="./images/fire-shield-nobg-white.svg"
+                width="48"
+                height="48"
+              />
+            </div>
+            Firewall protected
           </div>
-          Firewall protected
-        </div>
-        <div class="badge">
-          <div class="illustration">
-            <img src="./images/server-rack.svg" width="48" height="48" />
+          <div class="badge">
+            <div class="illustration">
+              <img src="./images/server-rack.svg" width="48" height="48" />
+            </div>
+            SSD powered
           </div>
-          SSD powered
-        </div>
-        <div class="badge">
-          <div class="illustration">
-            <img
-              src="./images/ringing-bell-nobg-frenchblue.svg"
-              width="48"
-              height="48"
-            />
+          <div class="badge">
+            <div class="illustration">
+              <img
+                src="./images/ringing-bell-nobg-frenchblue.svg"
+                width="48"
+                height="48"
+              />
+            </div>
+            Realtime alerts
           </div>
-          Realtime alerts
-        </div>
-        <div class="badge">
-          <div class="illustration">
-            <img
-              src="./images/extra-time-nobg-white.svg"
-              width="48"
-              height="48"
-            />
+          <div class="badge">
+            <div class="illustration">
+              <img
+                src="./images/extra-time-nobg-white.svg"
+                width="48"
+                height="48"
+              />
+            </div>
+            >99% Uptime
           </div>
-          >99% Uptime
-        </div>
-        <div class="badge">
-          <div class="illustration">
-            <img src="./images/arrows-shield.svg" width="48" height="48" />
+          <div class="badge">
+            <div class="illustration">
+              <img src="./images/arrows-shield.svg" width="48" height="48" />
+            </div>
+            DDos protected
           </div>
-          DDos protected
-        </div>
-        <div class="badge">
-          <div class="illustration">
-            <img
-              src="./images/eye-target-nobg-frenchblue.svg"
-              width="48"
-              height="48"
-            />
+          <div class="badge">
+            <div class="illustration">
+              <img
+                src="./images/eye-target-nobg-frenchblue.svg"
+                width="48"
+                height="48"
+              />
+            </div>
+            24/7 Monitoring
           </div>
-          24/7 Monitoring
-        </div>
-        <div class="badge">
-          <div class="illustration">
-            <img
-              src="./images/crossed-chains-nobg-white.svg"
-              width="48"
-              height="48"
-            />
+          <div class="badge">
+            <div class="illustration">
+              <img
+                src="./images/crossed-chains-nobg-white.svg"
+                width="48"
+                height="48"
+              />
+            </div>
+            VPN network
           </div>
-          VPN network
         </div>
       </section>
       <!--  -->

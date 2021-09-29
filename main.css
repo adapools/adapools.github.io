@@ -10,21 +10,17 @@ body {
 }
 
 main {
-  padding: 20px;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-}
+  padding: 1rem;
+  flex: 1 1 auto;
 
-header,
-footer {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: auto;
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 footer {
+  flex: 1 1 auto;
+  padding: 1rem;
+
   background-color: #0055a4;
   color: white;
   height: 100px;
@@ -44,18 +40,31 @@ footer a {
   text-decoration: none;
 }
 
+header {
+  flex: 1 1 auto;
+  margin: 5rem;
+}
+
 #badges {
+  flex: 1 1 auto;
+  max-width: 680px;
   margin: 0 auto;
+}
+
+#badges-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-start;
 }
 
-#badges .badge {
+#badges-list .badge {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 120px;
+
   margin: 0.3rem;
   padding: 0.3rem;
   text-align: center;
@@ -63,12 +72,65 @@ footer a {
   border-radius: 5%;
 }
 
-#badges .badge .illustration {
+#badges-list .badge .illustration {
   margin: 0.5rem;
 }
 
-#introduction {
-  padding: 3rem;
+#parameters {
+  flex: 1 1 auto;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+#parameters-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-start;
+}
+
+#parameters-list .illustration img {
+  width: 100%;
+  max-width: 762px;
+  height: auto;
+}
+
+#parameters-list .parameter {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  margin: 0.3rem;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 5%;
+}
+
+#parameters-list .parameter hr {
+  margin: 0.1rem;
+}
+
+#parameters-list .parameter small {
+  font-family: "GFS Neohellenic", sans-serif;
+  color: #81a5c7;
+}
+
+#parameters-list .parameter .illustration {
+  margin: 0.5rem;
+}
+
+#architecture {
+  flex: 1 1 auto;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+#architecture .illustration img {
+  width: 100%;
+  max-width: 762px;
+  height: auto;
 }
 
 .font1 {
@@ -83,9 +145,22 @@ footer a {
   background-color: #0055a4;
 }
 
+.bg-gray {
+  background-color: #5f5f5f;
+}
+
 .color-frenchblue {
   color: #0055a4;
 }
+.color-gray {
+  color: #5f5f5f;
+}
 .color-white {
   color: #fff;
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
 }
