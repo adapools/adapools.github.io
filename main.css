@@ -35,6 +35,15 @@ footer {
   text-overflow: ellipsis;
 }
 
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.text-highlight {
+  background-color: #81a5c7;
+}
+
 footer a {
   color: white;
   text-decoration: none;
@@ -47,8 +56,6 @@ header {
 
 #badges {
   flex: 1 1 auto;
-  max-width: 680px;
-  margin: 0 auto;
 }
 
 #badges-list {
@@ -76,10 +83,12 @@ header {
   margin: 0.5rem;
 }
 
+#news {
+  flex: 1 1 auto;
+}
+
 #parameters {
   flex: 1 1 auto;
-  max-width: 680px;
-  margin: 0 auto;
 }
 
 #parameters-list {
@@ -123,8 +132,6 @@ header {
 
 #architecture {
   flex: 1 1 auto;
-  max-width: 680px;
-  margin: 0 auto;
 }
 
 #architecture .illustration img {
