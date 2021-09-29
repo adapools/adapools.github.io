@@ -25,7 +25,7 @@ footer {
 }
 
 footer {
-  background-color: black;
+  background-color:#0055A4;
   color: white;
   height: 100px;
 
@@ -50,4 +50,12 @@ footer a {
 
 .font2 {
   font-family: "Podkova", serif;
+}
+
+.bg-frenchblue{
+  background-color:#0055A4;
+}
+
+.color-frenchblue{
+  color:#0055A4;
 }
